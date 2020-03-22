@@ -9,6 +9,7 @@ cd RasPI_FanControl
 chmod +x install.sh  
 sudo ./install.sh  
   
-That should be it.  On reboot the fan should run for 30s if temperature is below the threshold or keep on running if above the threshold.  
+That should be it.  
+On reboot the fan should run for 30s if temperature is below the threshold or keep on running if above the threshold.  
 Edit /usr/local/bin/fancontrol.sh to change fan temperature thresholds.  
 All fancontrol.sh on/off states are logged via syslog to /var/log/messages.  
