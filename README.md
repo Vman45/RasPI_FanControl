@@ -4,3 +4,5 @@ To install do the following as the pi user on your Raspberry Pi
 sudo apt update
 sudo apt install git
 git clone https://github.com/ZS6TVB/RasPI_FanControl/edit/master/
+
+
