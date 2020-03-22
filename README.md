@@ -7,3 +7,9 @@ sudo apt install git
 git clone https://github.com/ZS6TVB/RasPI_FanControl  
 cd RasPI_FanControl  
 sudo ./install.sh  
+  
+That should be it.  On reboot the fan should run for 30s if temperature is below the threshold or keep on running if above the threshold.  
+Edit /usr/local/bin/fancontrol.sh to change fan temperature thresholds  
+All fan fancontrol.sh on/off states are logged to /var/log/messages
+
+
