@@ -3,7 +3,8 @@ if (( $EUID != 0 )); then
     echo "Please run as root"
     exit
 fi
-cp -f fancontrol.sh /usr/local/bin/. 
+cp -f fancontrol.sh /usr/local/bin/.
+chmod a+x /usr/local/bin/fancontrol.sh
 cat /etc/rc.local | grep fancontrol.sh
 if [ $? -ne 0 ]
 then 
